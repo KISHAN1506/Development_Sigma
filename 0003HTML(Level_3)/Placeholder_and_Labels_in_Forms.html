@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Placeholder and Labels in Forms</title>
+</head>
+<body>
+    <form action="">
+        <!-- label connects text and input -->
+        <!-- Old school Ways -->
+        <!-- <label>
+            Username : 
+            <input type="text" placeholder="Enter Username">
+        </label> -->
+
+        <!-- Classical Way -->
+        <!-- Connection is because of "For" and "ID" attribute -->
+        <div>
+            <label for="Username">Username :</label>
+            <input type="text" name="" id="Username" placeholder="Enter Username ">
+        </div>
+
+        <div>
+            <label for="password">Enter password :</label>
+            <input type="text" name="" id="password" placeholder="Enter Password">
+        </div>
+
+    </form>
+</body>
+</html>
