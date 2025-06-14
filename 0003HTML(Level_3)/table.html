@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .table-heading{
+            background-color: rgb(132, 132, 132);
+            color: white;
+            text-align: center;
+            border: solid;
+            border-color: black;
+        }
+        .general-data, .overall-table{
+            border: solid black;
+        }
+
+    </style>
+    <title>Tables in HTML</title>
+</head>
+<body>
+    <!-- Tables in HTML are very similar to real life tables -->
+    <!-- Data is horizontal lines are called rows -->
+    <!-- Data is verticle lines are called columns -->
+
+    <!-- 
+
+    _  _  _  _  _  ~ R1 ~~Table Header
+    _  _  _  _  _  ~ R2
+    _  _  _  _  _  ~ R3
+    _  _  _  _  _  ~ R4
+    _  _  _  _  _  ~ R5
+    |  |  |  |  |   
+    C1 C2 C3 C4 C5 
+
+    -->
+
+    <!-- th - Table Heading and td - Table data -->
+    <table border="black">
+         <caption>Animal Data</caption>
+        <tr>
+            <th>Name</th>
+            <th>Place</th>
+            <th>Size</th>
+        </tr>
+        <tr>
+            <td>Zebra</td>
+            <td>Zoo</td>
+            <td>Small</td>
+        </tr>
+        <tr>
+            <td>Lion</td>
+            <td>Forest</td>
+            <td>Big</td>
+        </tr>
+    </table>
+    <p></p>
+    <p></p>
+    <table class="overall-table">
+        <caption>Food Menu</caption>
+        <tr>
+            <td class="table-heading"><b>Item</b></td>
+            <td class="table-heading"><b>Price</b></td>
+        </tr>
+        <tr>
+            <td class="general-data">Frooti</td>
+            <td class="general-data">10</td>
+        </tr>
+        <tr>
+            <td class="general-data">Samosa</td>
+            <td class="general-data">12</td>
+        </tr>
+        <tr>
+            <td class="general-data">Chips</td>
+            <td class="general-data">20</td>
+        </tr>
+    </table>
+</body>
+</html>
