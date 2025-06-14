@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .table-heading{
+            background-color: rgb(132, 132, 132);
+            color: white;
+            text-align: center;
+            border: solid;
+            border-color: black;
+        }
+        .general-data, .overall-table{
+            border: solid black;
+        }
+
+    </style>
+    <title>Semantics in Table</title>
+</head>
+<body>
+    <!-- 
+    Has 3 parts:
+    1. thead
+    2. tbody
+    3. tfoot
+    -->
+
+    <table class="overall-table">
+        <caption>Food Menu</caption>
+        <!-- Table Header -->
+        <thead>
+            <tr>
+                <td class="table-heading"><b>Item</b></td>
+                <td class="table-heading"><b>Price</b></td>
+            </tr>
+        </thead>
+        
+        <!-- Table Body -->
+        <tbody>
+            <tr>
+                <td class="general-data">Frooti</td>
+                <td class="general-data">10</td>
+            </tr>
+            <tr>
+                <td class="general-data">Samosa</td>
+                <td class="general-data">12</td>
+            </tr>
+            <tr>
+                <td class="general-data">Chips</td>
+                <td class="general-data">20</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- 
+    +--------+--------+
+    | Item   | Price  |   ← header
+    +--------+--------+
+    | A      | 10     |
+    | B      | 20     |
+    | C      | 30     |   ← body
+    +--------+--------+
+    | Sum    | 60     |   ← footer
+    +--------+--------+
+    -->
+</body>
+</html>
