@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Name Attribute</title>
+</head>
+<body>
+    <form action="/server">
+        <div>
+            <label for="Username">Username :</label>
+            <input type="text" id="Username" placeholder="Enter Username " name="username">
+            <!-- this name is given so that value can be accessible in backend -->
+        </div>
+
+        <div>
+            <label for="password">Enter password :</label>
+            <input type="password" id="password" placeholder="Enter Password" name="password">
+        </div>        
+        <button>submit</button>
+        <!-- file:///server?username=jxhdf&password= -->
+        <!-- Information is sent in name-value pair -->
+    </form>
+
+    <hr>
+
+    <form action="https://www.youtube.com/results">
+        <input type="text" name="search_query">
+        <button>Submit</button>
+    </form>
+
+</body>
+</html>
