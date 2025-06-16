@@ -1,0 +1,13 @@
+h1{
+    color: rebeccapurple;
+}
+
+p{
+    background-color: lightseagreen;
+}
+
+
+/* Applies to all the buttons in the document */
+button{
+    color: crimson;
+}
