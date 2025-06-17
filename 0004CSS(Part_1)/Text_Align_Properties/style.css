@@ -1,0 +1,27 @@
+/* Has many properties like :
+
+1. text-align
+2. font-weight
+3. text-decoration
+4. line-height
+5. letter-spacing
+6. font-size
+
+*/
+
+
+/* ✨Latest CSS version is CSS 3 */
+
+/* 1. Text Align */
+/* This shows that alignment property is relative to the parent element */
+.para1 {
+    /* start and end depend on the type of language be it english or Arabic */
+    text-align: end;
+    border: solid black;
+    width: 50%;
+}
+
+.para2 {
+    /* Justify makes text spread all over the width */
+    text-align: justify;
+}
