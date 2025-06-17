@@ -1,0 +1,15 @@
+h1{
+    /* goes from 1 to f ie '1' '2' '3' '4' '5' '6' '7' '8' '9' 'A' 'B' 'C' 'D' 'E' 'F' */
+    /* because of hexadecimal which has last ff */
+    /* when we convert ff to decimal --> (15 * 16^0) +(15 * 16^1) == 255*/
+    /* our decimal goes from 0 to 255 */
+
+    /* This system is mainly used in color determination  */
+    /* #000000 --> black color */
+    /* #ffffff --> white color */
+    color: #ff0000;
+    /* this is a shorthand for f f f -->ff ff ff */
+    color: #fff;
+    /* this is a shorthand for f 0 f -->ff 00 ff */
+    color: #f0f;
+}
