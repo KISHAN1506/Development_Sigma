@@ -1,0 +1,29 @@
+.poem_content {
+    color: red;
+    text-align: center;
+    line-height: 30px;
+}
+
+h1,h2,h3,h4{
+    text-align: center;
+}
+
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+a{
+    color: rgb(4, 130, 4);
+    text-decoration: none;
+}
+
+button{
+    background-color: white;
+    color: blueviolet;
+}
+
+/* Hex code for black color is #000000 */
+
+textarea {
+    color: black;
+}
