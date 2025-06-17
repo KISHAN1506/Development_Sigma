@@ -1,0 +1,6 @@
+.para1 {
+    /* 2.5 is == to 2.5 X normal line height */
+    line-height: 2.5;
+    /* control horizontal space between characters */
+    letter-spacing: 12px;
+}
