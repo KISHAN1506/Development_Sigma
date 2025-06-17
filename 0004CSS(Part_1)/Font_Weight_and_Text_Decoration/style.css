@@ -1,0 +1,25 @@
+/* Font weight can be set as:
+'100' '200' '300' '400' '500' '600' '700' '800' '900'
+*/
+
+.para1 {
+    font-weight: normal; /* 400 */
+    /* font-weight: bold; 700 */
+
+    /* bolder and lighter tags are used with respect to parent element */
+}
+
+.para2 {
+    text-decoration: red underline wavy;
+}
+.para3 {
+    text-decoration: double overline;
+}
+.para4 {
+    text-decoration: line-through;
+}
+
+
+a{
+    text-decoration: none;
+}
