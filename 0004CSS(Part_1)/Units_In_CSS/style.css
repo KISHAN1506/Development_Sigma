@@ -1,0 +1,6 @@
+/* 1 inch = 96 pixels */
+/* pixel is not suitable for responsive Websites */
+
+.para1{
+    font-size: 25px;
+}
