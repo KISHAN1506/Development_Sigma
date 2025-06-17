@@ -1,0 +1,15 @@
+h1{
+    color: fuchsia;
+}
+h2 {
+    /* r g b ie red, green and blue colors can go from 0 to 255 */
+    /* rgb is kind of a color bucket */
+    /* for white rgb is 255 255 255 */
+    /* for black rgb is 0 0 0 */
+    color: rgb(122, 433, 324);
+}
+
+h3 {
+    /* a ie alpha is related to opacity of the color */
+    color: rgba(255, 0, 0, 0.4);
+}
