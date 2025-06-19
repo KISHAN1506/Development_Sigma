@@ -1,0 +1,11 @@
+/* Selectors type/methods
+-> Universal Selector
+
+* {
+    Universal Selector
+}
+*/
+
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
