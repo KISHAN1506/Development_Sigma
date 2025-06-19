@@ -1,0 +1,84 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+h1 ,h3 {
+    color: #b92b27;
+}
+
+/* 
+#myID {
+    -> proerties
+}
+
+*/
+
+#login{
+    background-color: white;
+}
+
+#signup {
+    background-color: #b92b27;
+    color: white;
+}
+
+/* . operator is used to target class */
+
+.upvote {
+    background-color: green;
+    color: aliceblue;
+}
+
+
+/* 
+Descendant Selector : 
+can skip multiple levels
+
+div p {
+
+}
+
+targeting all p(s) that are inside div
+or those p(s) whose parent is the div.
+*/
+
+/* First Target Class then target inside tag */
+.post a {
+    text-decoration: none;
+    color: purple;
+    background-color: yellow;
+}
+
+/* we can also write 
+nav a {
+
+}
+*/
+nav ul li a {
+    color: magenta;
+}
+
+/* 
+
+Eg : p + h3
+will target all the heading3 that comes immediately after the paragraph
+
+*/
+
+
+p + h3 {
+    text-decoration: underline;
+}
+
+/* All the buttons that comes just after upvote class will get targetted */
+.upvote + button {
+    background-color: lightblue;
+}
+
+
+/* This is direct one level descendent only */
+div > input {
+    background-color: lightcoral;
+    color: rgb(136, 51, 51);
+}
