@@ -1,0 +1,34 @@
+div{
+    background-color: yellow;
+}
+
+form {
+    background-color: red;
+}
+
+
+/* The input and button does not inherit background color by default */
+input{
+    background-color: inherit;
+}
+button {
+    background-color: inherit;
+}
+
+button:hover{
+    background-color: red;
+}
+
+/* Color pallate used for coloring website can be easily searched on google
+by just giving a starting color */
+
+/* 
+Many properties are non-inheritable we have to set it manually and specifically : 
+    width
+    heigth
+    border
+    |
+    |
+    | 
+    and many more
+*/
