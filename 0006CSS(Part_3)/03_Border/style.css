@@ -1,0 +1,40 @@
+/* Border sets for the outer linning of div
+to be more clear
+place between margin and padding
+*/
+
+/* 
+Border Properties : 
+• Border Width
+• Border Style
+• Border Color
+*/
+
+
+div {
+    /* BY default it sets the content area height of the  */
+    height: 100px;
+    width: 600px;
+    background-color: pink;
+    /* border-width: 3px;
+    border-style: dashed;
+    border-color: yellow; */
+    border: 5px dashed yellow;
+    border-top: 5px dashed blue;
+    margin-bottom: 5px;
+}
+
+h1 {
+    /* This is border shorthand */
+    border: dashed purple 2px;
+}
+
+
+/* 
+Border Sides:
+• Border-left
+• Border-right
+• Border-top
+• Border-bottom
+
+*/
