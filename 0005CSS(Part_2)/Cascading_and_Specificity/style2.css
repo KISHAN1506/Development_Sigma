@@ -1,0 +1,5 @@
+/* This one h3 property is applied because this is included afterwaeds in HTML file */
+
+h3 {
+    background-color: darkviolet;
+}
