@@ -1,0 +1,17 @@
+span {
+    background-color: magenta;
+    border: solid black 2px;
+    height: 100px;
+    width: 100px;
+    margin: 25px;
+    padding: 25px;
+}
+
+div {
+    background-color: magenta;
+    border: solid black 2px;
+    height: 100px;
+    width: 100px;
+    margin: 25px;
+    padding: 25px;
+}
