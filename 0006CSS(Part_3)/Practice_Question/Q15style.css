@@ -1,0 +1,24 @@
+.mainBox {
+    height: 200px;
+    width: 74px;
+    border: 2px solid black;
+    background-color: gray;
+}
+
+.secDiv {
+    height: 50px;
+    width: 50px;
+    border: 2px solid black;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+#cir1{
+    background-color: red;
+}
+#cir2{
+    background-color: yellow;
+}
+#cir3{
+    background-color: green;
+}
