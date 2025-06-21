@@ -1,0 +1,38 @@
+/* Em is basically used for font-size, width, etc.  */
+
+#outer {
+    height: 400px;
+    width: 400px;
+    border: solid black 2px;
+    background-color: pink;
+    font-size: 20px;
+}
+#inner {
+    height: 100px;
+    width: 100px;
+    border: solid black 2px;
+    background-color: cornflowerblue;
+    font-size: 2em;
+}
+
+
+button {
+    font-size: 50px;
+    border-radius: 15px;
+    border: 5px solid green;
+    padding: 0px 1em;
+    margin-top: 14px;
+}
+
+/* div{
+    font-size: 2em;
+} */
+
+/* Drawback of em is snowball effect */
+
+
+/* Rem - root em -> which is root element */
+
+div{
+    font-size: 2rem;
+}
