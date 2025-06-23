@@ -1,0 +1,42 @@
+/* 
+
+Alpha is used to set the opacity of the color
+ie rgba --> a denotes aplha ranges from 0 to 1
+
+range of channels :
+
+r channel - 0 to 255
+g channel - 0 to 255
+b channel - 0 to 255
+a channel - 0 to 1
+
+if alpha channel is weitten in hex code 
+then it comes in the last and the value ranges form 00 -> ff
+
+*/
+
+body {
+    background-color: pink;
+}
+
+div {
+    height: 200px;
+    width: 200px;
+    background-color: #7fffd494;
+}
+
+
+/* 
+
+2nd is Opacity : 
+it sets the opacity of the element whereas
+alpha channel sets the opacity of the color specifically
+range -> 0 to 1
+
+*/
+
+#opacity {
+    background-color: #eaff00;
+    opacity: 0.4;
+    border: solid black 2px;
+}
