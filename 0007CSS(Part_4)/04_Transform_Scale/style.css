@@ -1,0 +1,23 @@
+div {
+    height: 300px;
+    width: 300px;
+    background-color: rgb(255, 119, 0);
+    transform: rotate(0deg);
+    margin: 0 auto;
+    margin-top: 200px;
+    transition: 0.3s;
+}
+
+/* div:hover {
+    transform: scale(1.5);
+} */
+
+
+/* Translate property */
+div:hover {
+    /* 0.5--> x direction and 2 --> y direction */
+    transform: scale(0.5,2);
+    /* Can also give scale individually along x y or z */
+    transform: scaleX(2);
+}
+
