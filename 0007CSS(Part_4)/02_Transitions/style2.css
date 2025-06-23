@@ -3,7 +3,8 @@ div{
     width: 200px;
     background-color: #3f08cb;
     margin: 0 auto;
-    transition: 1s;
+    /* On a certain property like margin */
+    transition: margin 1s ease-in; 
 }
 
 div:hover {
