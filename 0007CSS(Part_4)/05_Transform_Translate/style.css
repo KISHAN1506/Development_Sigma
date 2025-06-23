@@ -1,0 +1,33 @@
+/* 
+Here's a comparison for clarity:
+
+where  hover (mouse enter)  hover out (mouse leave)
+On     Smooth transition   Smooth transition (applying transition prop in div)
+On     Smooth transition   Instant jump back (applying transition prop in :hover)
+*/
+
+div {
+    height: 300px;
+    width: 300px;
+    background-color: rgb(255, 119, 0);
+    transform: rotate(0deg);
+    margin: 0 auto;
+    margin-top: 200px;
+    transition: 0.3s;
+}
+
+div:hover {
+    transform: translate(100px,0px);
+
+    /* 
+    Again we can give translation solely along x or y direction
+    transform: translateX(100px);
+    transform: translateY(-100px);
+        |
+        |
+        |
+        |
+
+    */
+}
+
