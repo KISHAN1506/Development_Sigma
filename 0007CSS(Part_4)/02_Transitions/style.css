@@ -1,0 +1,20 @@
+/* 
+
+Transition enables you to define the transition between two state of an element 
+
+*/
+body {
+    background-color: pink;
+}
+
+div{
+    height: 200px;
+    width: 200px;
+    background-color: #3f08cb;
+    transition: 0.3s; /* Duration*/
+}
+
+div:hover {
+    background-color: rgb(255, 147, 16);
+    border-radius: 50%;
+}

@@ -1,0 +1,12 @@
+div{
+    height: 200px;
+    width: 200px;
+    background-color: #3f08cb;
+    margin: 0 auto;
+    transition: 1s;
+}
+
+div:hover {
+    margin: 400px auto;
+    background-color: aqua;
+}
