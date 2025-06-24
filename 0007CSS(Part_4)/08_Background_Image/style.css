@@ -1,0 +1,15 @@
+div {
+    width: 600px;
+    height: 400px;
+    margin: 0 auto;
+    background-color: aquamarine;
+    background: url("beach-406439_1920.jpg");
+    background-size: auto;
+    /* 
+    background-size has 3 options :
+    1. contain : image will not be cropped or scaled
+        it will just be repeated to fill the area
+    2. cover : will fit the image by cropping it
+    3. auto : will stretch it to fit in (or repeat depends on the size)
+    */
+}
