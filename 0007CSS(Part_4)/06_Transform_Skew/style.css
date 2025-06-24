@@ -1,0 +1,41 @@
+/* 
+Here's a comparison for clarity:
+
+where  hover (mouse enter)  hover out (mouse leave)
+On     Smooth transition   Smooth transition (applying transition prop in div)
+On     Smooth transition   Instant jump back (applying transition prop in :hover)
+*/
+
+#div1 {
+    height: 300px;
+    width: 300px;
+    background-color: rgb(255, 119, 0);
+    transform: rotate(0deg);
+    margin: 0 auto;
+    margin-top: 200px;
+    transition: 0.3s;
+}
+
+#div1:hover {
+    transform: skew(100deg);
+}
+
+
+#div2 {
+    height: 300px;
+    width: 300px;
+    background-color: rgb(255, 119, 0);
+    transform: rotate(0deg);
+    margin: 0 auto;
+    margin-top: 200px;
+    transition: 0.3s;
+}
+
+#div2:hover {
+    
+    transform: skew(30deg) translateX(200px);
+    /*
+    Not correct
+    transform: skew(-30deg);
+    transform: translateX(50px); */
+}
