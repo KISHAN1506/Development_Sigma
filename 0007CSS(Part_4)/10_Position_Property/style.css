@@ -1,0 +1,57 @@
+/* 
+Position Property sets how an element is positioned in a document
+the top right bottom left property determine the final position of the element
+
+• static
+• relative 
+• absolute
+• fixed
+*/
+
+div {
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    text-align: center;
+    border: 3px solid black;
+    margin: 20px;
+    display: inline-block;
+}
+
+
+#static {
+    background-color: yellow;
+    position: static;
+    /* in static these properties have no effect */
+    top: 100px;
+    left: 500px;
+}
+
+/* offset it relative to itself */
+/* Space is created and is holded even if element is moved */
+#relative {
+    position: relative;
+    background-color: yellow;
+    top: 100px;
+    left: 50px;
+}
+
+/* It is positioned relative to its closest positioned ancestor,
+if any; otherwise, it is placed relative to the initial containing block. */
+/* No space stored */
+#absolute {
+    position: absolute;
+    background-color: yellow;
+    top: 100px;
+    right: 50px;
+    
+}
+
+/* It is positioned relative to the initial containing block established by the viewport. */
+/* fixed on screen even if you move the page */
+#fixed {
+    position: fixed;
+    background-color: yellow;
+    top: 200px;
+    right: 150px;
+}
