@@ -1,0 +1,41 @@
+/* 
+Justify-content :flex-start;
+Justify-content :flex-end;
+Justify-content :center;
+
+Justify-content :spaced-between;
+Justify-content :spaced-around;
+Justify-content :spaced-evenly;
+*/
+#container {
+    height: 500px;
+    width: 80%;
+    background-color: rgb(250, 255, 240);
+    margin: 10px auto;
+    border: 2px solid black;
+    display: flex;  /*row*/
+    flex-direction: column;
+
+    /* move directly everything to col size (area) end */
+    /* justify-content: flex-end; 
+    ie nothing will be changed as it is the whole as a block will move
+    */
+    /* justify-content: center; */
+    /* will have half the spaces in the corner as compared to spaces in between */
+    /* justify-content: space-around; */
+
+    /* will have all space evenly distributed */
+    justify-content: space-evenly;
+}
+
+h1 {
+    text-align: center;
+}
+
+#container div {
+    height: 50px;
+    width: 100px;
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+}
