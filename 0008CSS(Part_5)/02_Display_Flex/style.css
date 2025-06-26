@@ -1,0 +1,25 @@
+#container {
+    height: 500px;
+    width: 80%;
+    background-color: azure;
+    margin: 10px auto;
+    border: 2px solid black;
+    display: flex;  /*row*/
+    flex-direction: column;
+    /* If we want to align all the elements horizontally then 
+    we have to use direction ->row
+    but for verticle -> column
+    */
+}
+
+h1 {
+    text-align: center;
+}
+
+#container div {
+    height: 100px;
+    width: 300px;
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+}
