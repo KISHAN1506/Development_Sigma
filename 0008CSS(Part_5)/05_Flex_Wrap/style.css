@@ -1,0 +1,34 @@
+#container {
+    height: 500px;
+    width: 80%;
+    background-color: rgb(250, 255, 240);
+    margin: 10px auto;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    /* will try to fitin everything in 1 line (By default) */
+    /* flex-wrap: nowrap; */
+
+    /* using given size wrap as much element as possible  */
+    flex-wrap: wrap;
+
+
+    /* There are 2 axis:
+    1. main-axis (along the given col/row)
+    2. cross-axis (perpendicular to main axis)
+    */
+    /* Reverses along cross-axis */
+    flex-wrap: wrap-reverse;
+}
+
+h1 {
+    text-align: center;
+}
+
+#container div {
+    height: 200px;
+    width: 200px;
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+}
