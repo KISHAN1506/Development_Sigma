@@ -1,0 +1,28 @@
+/* Align Items helps us set the distribution along cross axis
+(ie axis perpendicular to main axis)
+
+Distribute the items along cross axis
+*/
+
+#container {
+    height: 500px;
+    width: 80%;
+    background-color: rgb(250, 255, 240);
+    margin: 10px auto;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+h1 {
+    text-align: center;
+}
+
+#container div {
+    height: 200px;
+    width: 200px;
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+}
