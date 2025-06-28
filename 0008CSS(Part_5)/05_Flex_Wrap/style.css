@@ -1,16 +1,17 @@
 #container {
-    height: 500px;
+    height: 300px;
     width: 80%;
     background-color: rgb(250, 255, 240);
     margin: 10px auto;
     border: 2px solid black;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     /* will try to fitin everything in 1 line (By default) */
     /* flex-wrap: nowrap; */
 
     /* using given size wrap as much element as possible  */
     flex-wrap: wrap;
+    justify-content: flex-start;
 
 
     /* There are 2 axis:
@@ -18,7 +19,7 @@
     2. cross-axis (perpendicular to main axis)
     */
     /* Reverses along cross-axis */
-    flex-wrap: wrap-reverse;
+    /* flex-wrap: wrap-reverse */
 }
 
 h1 {
@@ -26,8 +27,8 @@ h1 {
 }
 
 #container div {
-    height: 200px;
-    width: 200px;
+    height: 100px;
+    width: 300px;
     color: white;
     text-align: center;
     font-size: 1.5rem;
