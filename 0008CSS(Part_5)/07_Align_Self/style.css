@@ -1,0 +1,29 @@
+#container {
+    height: 600px;
+    width: 80%;
+    background-color: rgb(250, 255, 240);
+    margin: 10px auto;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    justify-content: flex-start;
+    align-content: space-evenly;
+}
+
+#org {
+    /* align self works on individual item */
+    /* align-self: flex-end; */
+    align-self: baseline;
+}
+
+h1 {
+    text-align: center;
+}
+#container div {
+    height: 100px;
+    width: 300px;
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+}
