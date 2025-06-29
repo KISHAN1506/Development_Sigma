@@ -12,9 +12,16 @@ Distribute the items along cross axis
     border: 2px solid black;
     display: flex;
     flex-direction: row;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
     justify-content: flex-start;
-    align-items: baseline; 
+    /* align-items: baseline;  */
+
+    /* 
+    Align items works on individual items items
+    whereas align content works on the complete flex/grid box;
+    */
+    align-content: space-evenly;
+
 }
     /* 
     Align items has 3 major properties:
@@ -29,6 +36,12 @@ Distribute the items along cross axis
     baseline is all the text aligned to single base line , by moving divs up or down 
     */
 
+    /* 
+    There 3 more options :
+    1. align-items: space-between; 
+    2. align-items: space-around; 
+    3. align-items: space-evenly; 
+    */
 
 h1 {
     text-align: center;
