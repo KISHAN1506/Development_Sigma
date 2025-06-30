@@ -1,0 +1,17 @@
+/* 
+Grid lines can be tracked by going into inspect and then observing the purple lines
+*/
+
+.container {
+    width: 600px;
+    height: 300px;
+    background-color: black;
+    display: grid;
+}
+
+.item {
+    width: 100px;
+    height: 50px;
+    background-color: aquamarine;
+    border: solid black 2px;
+}
