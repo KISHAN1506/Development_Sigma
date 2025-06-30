@@ -1,0 +1,38 @@
+.container {
+    height: 300px;
+    width: 300px;
+    background-color: cadetblue;
+    animation-name: widthAni;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes fontAni {
+    from {
+        font-size: 10px;
+    }
+    to {
+        font-size: 20px;
+    }
+}
+
+@keyframes fonColor {
+    from {
+        background-color: magenta;
+    }
+    to {
+        background-color: brown;
+    }
+}
+
+@keyframes widthAni {
+    from {
+        width: 35px;
+    }
+    to {
+        width: 300px;
+    }
+}
