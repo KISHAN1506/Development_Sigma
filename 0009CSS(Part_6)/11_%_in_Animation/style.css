@@ -1,0 +1,12 @@
+.container {
+    height: 600px;
+    width: 600px;
+    background-color: brown;
+    animation: colorAni 2s ease-in 0s infinite normal ;
+}
+
+@keyframes colorAni {
+    0% { background-color: magenta; }
+    50% { background-color: aqua; }
+    100% { background-color: brown; }
+}
