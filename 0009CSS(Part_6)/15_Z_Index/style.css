@@ -1,0 +1,31 @@
+/* 
+Z index decides the stack level of the element 
+Z index cannot change the index if the box position is either static or default
+
+by default the z index is auto / 0
+
+Z index if made more and more +Ve , will take the element on the above level
+while when the z index is taken more nd more -ve, will take element on lower level
+*/
+
+.box {
+    height: 150px;
+    width: 150px;
+    border: 2px solid black;
+    background-color: pink;
+}
+
+
+.one {
+    background-color: aquamarine;
+    position: relative;
+    z-index: -1;
+}
+
+.two {
+    background-color: darksalmon;
+    position: relative;
+    bottom: 50px;
+    z-index: -2;
+}
+
