@@ -1,0 +1,25 @@
+/* 
+Media Queries help us to make our website responsive
+*/
+
+.container {
+    height: 300px;
+    width: 300px;
+    background-color: pink;
+}
+
+/* @media (max-width:900px) {
+    .container {
+        background-color: aqua;
+    }
+}
+@media (min-width:200px) {
+    .container {
+        background-color: blueviolet;
+    }
+} */
+@media (min-width:200px) and (max-width:900px) {
+    .container {
+        background-color: blueviolet;
+    }
+}
