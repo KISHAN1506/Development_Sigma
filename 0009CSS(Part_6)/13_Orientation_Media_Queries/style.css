@@ -1,0 +1,11 @@
+
+.container {
+    height: 300px;
+    width: 300px;
+    background-color: pink;
+}
+@media (orientation: landscape) {
+    .container {
+        background-color: blue ;
+    }
+}
