@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using and Including Bootstrap</title>
+
+    <!-- cdn ==> content delivery network 
+        gives access to bootstrap framework 
+    -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 
+    In Bootstrap, classes like btn and btn-danger serve separate but complementary purposes:
+    ⸻
+    ✅ btn
+    This is the base class that styles the element as a Bootstrap button. It provides:
+        •	Padding
+        •	Border
+        •	Font styles
+        •	Cursor style
+        •	Transition effects
+        •	Disabled state handling
+        •	All foundational button behavior
+
+    Without this, Bootstrap won’t recognize the element as a styled button.
+    ⸻
+    ✅ btn-danger
+    This is a modifier class that changes the color theme of the button (in this case, red, for “danger”).
+    Bootstrap has multiple such modifiers like:
+        •	btn-primary (blue)
+        •	btn-success (green)
+        •	btn-warning (yellow)
+        •	btn-info (teal)
+        •	btn-dark, etc.
+
+    Each of these just changes the color scheme, but not the button’s basic structure.
+    ⸻
+    🔍 Why Both?
+    If you only write:
+    <button class="btn-danger">Click me</button>
+    It won’t be styled properly as a button — it’ll just get the red background and text color, but without padding, border-radius, or proper cursor, it won’t behave like a button.
+    ⸻
+    📌 Summary
+    Class	Role
+    btn	Makes it a Bootstrap button
+    btn-danger	Sets the color to “danger”
+    Both are needed together to get a styled red Bootstrap button.
+    Let me know if you want a visual comparison or code demo!
+    -->
+
+    <button>Click me</button>
+    <button class="btn btn-success">Click me</button>
+
+    <!-- 
+    Things covered in bootstrap :
+    1. Components:
+    pre-built and reusable piece of User Interface(UI), eg-buttons and forms
+
+    2. Layouts:
+    overall structure and arrangement of the elements, ed-container and grid
+
+    -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
