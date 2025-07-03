@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Container Layout</title>
+</head>
+
+<body>
+    <div class="container">
+        <h3>Notification<span class="badge bg-primary rounded-pill">10+</span></h3>
+        <button class="btn btn-primary">notification <span class="badge bg-danger">10+</span> </button>
+        <br><br><br>
+
+        <button type="button" class="btn btn-primary position-relative">
+            Inbox
+            <span class="position-absolute start-100 translate-middle badge rounded-pill bg-danger">
+                99+
+                <span class="visually-hidden">unread messages</span>
+            </span>
+        </button>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
