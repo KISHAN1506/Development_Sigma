@@ -10,8 +10,12 @@
     <link rel="logo" href="requirements/logo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=pip" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=books_movies_and_music" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=playlist_add" />
     <link rel="stylesheet" href="style.css">
     <title>Spotify - Web Player: Music for everyone</title>
 </head>
@@ -132,12 +136,25 @@
             </div>
         </div>
         <div class="music-player">
-            <div class="album"></div>
+            <div class="album">
+                <img src="requirements/card2img.jpeg" alt="" class="album-img">
+                <div class="music-player-info">
+                    <div class="music-player-info-name">
+                        <p>Daylight</p>
+                    </div>
+                    <div class="music-player-info-author">
+                        <p>David Kushner</p>
+                    </div>
+                </div>
+                <i class="fa-regular fa-heart player-optns" style="transform: scale(1.2);"></i>
+                <i class="fa-solid fa-images player-optns"></i>
+            </div>
             <div class="player">
                 <div class="player-controls">
                     <img src="requirements/player_icon1.png" alt="" class="player-control-icon">
                     <img src="requirements/player_icon2.png" alt="" class="player-control-icon">
-                    <img src="requirements/player_icon3.png" alt="" class="player-control-icon" style="transform: scale(1.75); opacity: 1;">
+                    <img src="requirements/player_icon3.png" alt="" class="player-control-icon"
+                        style="transform: scale(1.75); opacity: 1;">
                     <img src="requirements/player_icon4.png" alt="" class="player-control-icon">
                     <img src="requirements/player_icon5.png" alt="" class="player-control-icon">
                 </div>
@@ -148,7 +165,16 @@
 
                 </div>
             </div>
-            <div class="controls"></div>
+            <div class="controls">
+                <i class="fa-solid fa-book"></i>
+                <i class="fa-solid fa-microphone-lines"></i>
+                <span class="material-symbols-outlined">
+                    playlist_add
+                </span>
+                <i class="fa-solid fa-tablet-screen-button"></i>
+                <i class="fa-solid fa-volume-high"></i>
+                <input type="range" class="controls-range" style="opacity: 1 !important;">
+            </div>
         </div>
     </div>
 
