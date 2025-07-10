@@ -1,0 +1,1 @@
+// when we compare 2 non number then comparision occurs using their UNICODE
