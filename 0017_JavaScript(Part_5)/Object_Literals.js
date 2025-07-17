@@ -20,3 +20,11 @@ const post = {
 };
 
 console.log(person);
+
+// Accessing object literals
+console.log(post.username);
+console.log(post["username"]);
+
+let noOfPost = "repost";
+console.log(post[noOfPost]);
+console.log(post.noOfPost); // shows undefined as it is trying to find exactly noOfPost
