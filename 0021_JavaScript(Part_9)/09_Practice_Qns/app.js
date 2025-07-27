@@ -14,7 +14,7 @@ document.body.append(heading3);
 // Q3
 
 let divaddn = document.createElement("div");
-divaddn.style.border = "black";
+divaddn.style.border = "black solid 1px";
 divaddn.style.backgroundColor = "pink";
 document.querySelector("h3").append(divaddn);
 
