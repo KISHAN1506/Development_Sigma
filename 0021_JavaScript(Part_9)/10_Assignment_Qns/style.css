@@ -1,0 +1,9 @@
+.btnStyle {
+    background-color: blue;
+    color: white;
+}
+
+#head1{
+    text-decoration: underline solid black 2px;
+    color: purple;
+}
