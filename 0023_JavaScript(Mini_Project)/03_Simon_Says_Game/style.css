@@ -1,0 +1,45 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f7f9fc;
+    color: #333;
+    padding: 30px;
+    margin: auto;
+}
+
+body {
+    text-align: center;
+}
+
+.btn {
+    height: 200px;
+    width: 200px;
+    border: solid black 4px;
+    border-radius: 41px;
+    margin: 1rem;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+}
+
+.red {
+    background-color: #e76f51;
+}
+.yellow {
+    background-color: #e9c46a;
+}
+.green {
+    background-color: #adc178;
+}
+.purple {
+    background-color: #2a9d8f;
+}
+
+.flash {
+    background-color: rgb(255, 246, 246);
+}
+
+.userflash {
+    background-color: rgb(3, 26, 82);
+}
