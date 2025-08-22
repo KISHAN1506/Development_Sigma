@@ -1,0 +1,16 @@
+{
+  "name": "projecthaha",
+  "version": "1.0.0",
+  "description": "Just for learning how to create package",
+  "license": "ISC",
+  "author": "Kishan Agarwal",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "figlet": "^1.8.2",
+    "give-me-a-joke": "^0.5.1"
+  }
+}
