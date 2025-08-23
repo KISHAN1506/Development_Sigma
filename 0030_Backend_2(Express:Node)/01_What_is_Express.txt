@@ -1,0 +1,20 @@
+Library V/S Framework
+
+Library:
+A library is a pre-written code that can be used to perform a certain task
+eg -> axios
+
+Framework:
+A Framework is a set of pre-written code that provide a structure for 
+developing software applications 
+Eg -> Express
+
+Express
+A Node.js web application framework that helps us to make web applications 
+It is used for server side programming
+
+Uses of Express.js
+1. Listen for incoming requests
+2. parse the data incoming according to Java Script
+3. Match response with routes
+4. Give response according to the given response
