@@ -1,0 +1,3 @@
+EJS -  Embedded JavaScript Templates
+
+EJS is simple Templating language that lets you generate HTML markup with plain JS
