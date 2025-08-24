@@ -1,0 +1,21 @@
+Object Prototypes
+Prototypes are the mechanism by which JavaScript objects inherit features from one another.
+It is like a single template object that all objects inherit methods and properties from without having their own copy.
+arr._proto_ (reference)
+Array.prototype (actual object)
+String prototype
+
+Every object in JavaScript has a built-in property, which is called its prototype. The prototype is itself an object, so the prototype will have its own prototype, making what's called a prototype chain. The chain ends when we reach a prototype that has null for its own prototype.
+
+Factory Functions:
+function PersonMaker (name, age) {
+    const person = {
+    name: name, age: age, talk() €
+    console. log ('Hi, my name is ${this. name}');
+    };
+    return person;
+}
+let p1 = PersonMaker ("adam", 25); //сору
+let p2 = PersonMaker ("eve", 25); // copy
+
+--> Its disadvantage is p1.talk === p2.talk gives false , means every person has their own talk function which is inefficient with respect to memory
