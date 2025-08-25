@@ -1,0 +1,9 @@
+CRUD Operations
+GET retrieves resources.
+POST submits new data to the server.
+PUT updates existing data.
+PATCH update existing data partially.
+DELETE removes data.
+
+Resources --> the data on which we are going to work on
+Eg. post, tweet
