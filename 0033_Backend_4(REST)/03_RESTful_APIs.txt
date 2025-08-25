@@ -1,0 +1,5 @@
+GET     /posts     to get data from all the post      INDEX(MAIN)
+POST    /posts     to add a new post                  CREATE
+GET     /post/:id  to get one post (using ID)         VIEW
+PATCH   /post/:id  to update specific post            UPDATE
+DELETE  /post/:id  to delete specific post            DELETE
