@@ -1,0 +1,13 @@
+REST :
+Representational State Transfer
+
+REST is an architectural style that defines a set of constraints to be used
+for creating web services
+
+RESTful APIS
+
+Works on CRUD operations:
+Create
+Read
+Update 
+Delete
