@@ -1,0 +1,10 @@
+SQL -> 
+Relational Database (data stored in Tables)
+
+Eg. : MySQL, Oracle, PostgreSQL, etc.
+
+
+NoSQL ->
+Non Relational Database (data stored in document/key-val/graph, etc.)
+
+Eg. : MongoDB, Cassandra, Neo4j, etc.
