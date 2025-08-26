@@ -1,0 +1,30 @@
+SQL -> Structured Query Language
+SQL is a programming langauge which help us to interact with relational databases.
+
+Tables in 1 database should be inter related 
+If they do not have relation, then we have to create a separate db for that information
+
+Tables in SQL:
+columns -> design
+rows -> tuple
+
+Commands in WORKBENCH : 
+
+create database college;
+create database xyz_company;
+
+drop database xyz_company;
+
+use college;
+
+create table student (
+	roll_no INT,
+    name varchar(30),
+    age INT
+);
+
+insert into student values(300,"Kishan",19),(200,"Amit",89);
+
+select * from student;
+
+SHOW DATABASES;
