@@ -1,0 +1,10 @@
+What is Database?
+It is a collection of data in a format that can be easily accessable
+
+Why database:
+1. It can store large data
+2. Gives features like Security and Scalability
+3. Easier to insert, update or delete data
+
+CRUD opertions are performed in database
+SQL is DBMS (DataBase Management System)
