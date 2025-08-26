@@ -1,0 +1,2 @@
+create database if not exists xyz_company;
+drop database if exists college;
