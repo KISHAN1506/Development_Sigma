@@ -1,0 +1,9 @@
+Primary Key:
+It is a column (or set of columns) that uniquely identifies each row, (a unique id).
+There is only 1 PK in a Table , PK is UNIQUE and NOT NULL.
+
+
+Foreign Key:
+A foreign key is a column or a set of column that refer to a set of PK in other tables
+FK can have duplicate Values and NULL Values
+There can be multiple FK
