@@ -1,0 +1,73 @@
+Creating table in Instagram database:
+
+create database if not exists instagram;
+
+use instagram;
+
+create table user (
+	id INT,
+    name varchar(30),
+    email varchar(50),
+    followers INT,
+    following INT
+);
+
+
+Constraints(Rules for data in the table)
+NOT NULL     columns cannot have a null value
+UNIQUE       all values in column are different
+DEFAULT      sets the default value of a column
+CHECK        it can limit the values allowed in a column
+
+create table user (
+	id INT ,
+    age INT,
+    name varchar(30) NOT NULL,
+    email varchar(50) UNIQUE,
+    followers INT DEFAULT 0,
+    following INT,
+    CONSTRAINT age_check CHECK (age>=13)
+);
+
+
+
+Other Important Constraints :
+1. Primary Key:
+M1:
+create table user (
+	id INT PRIMARY KEY,
+    age INT,
+    name varchar(30) NOT NULL,
+    email varchar(50) UNIQUE,
+    followers INT DEFAULT 0,
+    following INT,
+    CONSTRAINT age_check CHECK (age>=13)
+);
+
+M2:
+create table user (
+	id INT,
+    age INT,
+    name varchar(30) NOT NULL,
+    email varchar(50) UNIQUE,
+    followers INT DEFAULT 0,
+    following INT,
+	PRIMARY KEY(id),
+    CONSTRAINT age_check CHECK (age>=13)
+);
+
+
+
+
+2. Foreign Key:
+create table t2(
+	t_id INT,
+    age INT,
+    FOREIGN KEY (t_id) references user(id)
+);
+
+EER diagram is created in SQL for visualization (Enhanced Entity–Relationship Diagram).
+
+
+
+Foreign key is the as Primary Key in one of the other tables present in the database
