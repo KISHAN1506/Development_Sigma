@@ -1,0 +1,14 @@
+Aggregate functions perform a calculation on a set of values, and return a single value.
+• COUNT(col_name) - returns total count of the rows
+• MAX(col_name) - maximum of all the values
+• MIN(col_name) - minimum of all the values
+• SUM(col_name) - sum of all the values
+• AVG(col_name) - avergae of all the values
+
+select max(followers) from user;
+select count(age) from user where age = 14;
+
+select min(age) from user;
+select max(age) from user;
+
+select avg(age) from user;
