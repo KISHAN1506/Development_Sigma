@@ -1,0 +1,8 @@
+GROUP BY:
+select age,max(followers) from user GROUP BY age;
+
+
+❌ this line will be give error because if we are trying to print something 
+condition of the group by should be given
+EG. followers in aggregation functions is allowed but cannot print followers outside
+select name,age,max(followers) from user GROUP BY age;
