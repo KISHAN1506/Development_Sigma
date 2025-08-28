@@ -1,0 +1,12 @@
+To get data with Specific Conditions
+
+select * from user where age > 14;
+select name from user where age > 14;
+
+
+Operators that can be used in where condition:
+Arithmetic Operators: +(addition) , -(subtraction), *(multiplication), /(division), %(modulus)
+Comparison Operators: = (equal to), != (not equal to), > , >=, <, <=
+Logical Operators : AND, OR, NOT, IN, BETWEEN, ALL, LIKE, ANY
+Bitwise Operators : & (Bitwise AND), | (Bitwise OR)
+
