@@ -1,0 +1,4 @@
+Sets an upper limit on number of (tuples) rows to be returned
+
+enter query and end with the "LIMIT 3";or something
+this will give the first 3 rows
