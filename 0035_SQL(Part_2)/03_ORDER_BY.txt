@@ -1,0 +1,4 @@
+select * from user ORDER BY followers ASC;
+select * from user ORDER BY followers DESC;
+
+If we donot mention anything then by default sorting is done in ascending order
