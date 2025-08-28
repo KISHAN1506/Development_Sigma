@@ -1,0 +1,5 @@
+truncate table user;
+select * from user;
+
+
+just empty the table does not delete it     
