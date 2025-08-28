@@ -1,0 +1,41 @@
+Updation:
+SET SQL_SAFE_UPDATES = 0;
+UPDATE user SET followers = 600 where age = 16;
+
+
+Deletion:
+delete from user where age = 14;
+select * from user ;
+
+
+Alter:
+Alter (to change the schema)
+ADD Column
+
+ALTER TABLE table_name
+ADD COLUMN column_name datatype constraint;
+Eg : alter table user add column city varchar(30) default "SURAT";
+
+
+DROP Column
+
+ALTER TABLE table_name
+DROP COLUMN column_name;
+Eg : alter table user drop column age;
+
+RENAME Table
+
+ALTER TABLE table_name
+RENAME TO new_table_name;
+
+CHANGE Column (rename)
+
+ALTER TABLE table_name
+CHANGE COLUMN old _name new_name new_datatype new_constraint;
+Eg: alter table user change column followers subs INT default 0;
+
+MODIFY Column (modify datatype/ constraint)
+
+ALTER TABLE table_name
+MODIFY col_name new_datatype new_constraint;
+Eg : alter table user modify subs INT default 0;
