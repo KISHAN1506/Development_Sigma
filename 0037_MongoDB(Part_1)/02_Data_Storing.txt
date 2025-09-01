@@ -1,0 +1,12 @@
+Data ion MongoDB is stored in BSON data format
+BSON -> Binary JSON
+
+We give normal JSON/JS format itself to Mongo but it automatically converts it into BSOPN format
+
+Problems with JSON:
+1. Text Based
+2. space inefficient (also gives us less options)
+
+
+JSON is human and machine readable while BSON is only machine readable
+
