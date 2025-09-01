@@ -1,0 +1,14 @@
+test> 1+2
+3
+test> "kishan"+"agarwal"
+kishanagarwal
+test> "kishan"+"agarwal".toUpperCase()
+kishanAGARWAL
+test> use college;
+switched to db college
+college> show dbs
+admin   40.00 KiB
+config  12.00 KiB
+local   40.00 KiB
+college> db
+college
