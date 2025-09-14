@@ -1,0 +1,14 @@
+db.collection.updateOne()
+Updates at most a single document that match a specified filter even though multiple documents may match the specified filter.
+
+db.collection.updateOne(<filter>, <update>, <options>)
+
+
+db.student.updateOne( {name: "adam"}, {$set: {marks:99}} )
+
+db.collection.updateMany()   Update all documents that match a specified filter.
+
+
+db.collection.replaceOne()   Replaces at most a single document that match a specified filter even though multiple documents may match the specified filter.
+In replace one the unique id of the object remains the same inspite of the whole object being changed.
+
