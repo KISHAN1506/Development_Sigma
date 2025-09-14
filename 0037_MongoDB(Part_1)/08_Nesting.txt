@@ -1,0 +1,8 @@
+{
+    _id: ObjectId ("64fdfcad780181c3d03ec623"),
+    name: ' farah' 
+    performance: { marks: 88, grade: 'A' }
+}
+to find
+
+db. student. findOne({"performance.marks": 88})
