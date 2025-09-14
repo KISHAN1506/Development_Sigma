@@ -1,0 +1,14 @@
+delete One
+db.collection.deleteOne(<filter», <options>)
+
+deleteMany
+db.collection.deleteMany< filter>, <options>
+
+db.dropDatabase()
+
+db.student.deletene( {state: "Haryana"} )
+{ acknowledged: true, deletedCount: 1 }
+
+db.student.deleteMany({}) --> delete every object if passed without any condition
+
+db.dropDatabase()
