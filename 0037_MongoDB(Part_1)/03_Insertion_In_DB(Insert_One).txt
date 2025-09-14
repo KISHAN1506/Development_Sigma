@@ -1,0 +1,43 @@
+show collections ===  showing tables
+
+test> use college;
+switched to db college
+college> show collections
+
+college> db.student.insertOne({name:"adam",age:19,marks:88})
+{
+  acknowledged: true,
+  insertedId: ObjectId('68b5de514b1dc46aa5cab507')
+}
+college> show collections
+student
+college> db.student.find()
+[
+  {
+    _id: ObjectId('68b5de514b1dc46aa5cab507'),
+    name: 'adam',
+    age: 19,
+    marks: 88
+  }
+]
+college> db.student.insertOne({name:"bob",city:"Delhi",marks:98})
+{
+  acknowledged: true,
+  insertedId: ObjectId('68b5df1e4b1dc46aa5cab508')
+}
+college> db.student.find()
+[
+  {
+    _id: ObjectId('68b5de514b1dc46aa5cab507'),
+    name: 'adam',
+    age: 19,
+    marks: 88
+  },
+  {
+    _id: ObjectId('68b5df1e4b1dc46aa5cab508'),
+    name: 'bob',
+    city: 'Delhi',
+    marks: 98
+  }
+]
+college> 
