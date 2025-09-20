@@ -1,0 +1,38 @@
+default : 10
+to give default value if key value pair not found
+
+
+immutable
+
+string ->
+Lowercase
+maxLength : 20 (maximum length of 20)
+
+Number -> 
+min : 1 (should have value 1)
+
+Date ->
+min,max
+
+enum ->
+traffic light
+enum : ["red","green","yellow"]
+passed value should be within these 3
+
+
+genre:[String]
+should be array of String of value
+
+
+🌟 ALL of these options run while inserting the values
+if we want them to run while updation also
+then we have to add a key value pair in options as {runValidators : true}
+
+for custom errors:
+price: {
+    type: Number, 
+    min:[1, "Price is too low for Amazon selling"!],
+},
+
+while printing if we want exact err ->
+console.log(err.errors.price.properties.message);
