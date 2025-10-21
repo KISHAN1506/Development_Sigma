@@ -1,0 +1,35 @@
+It is an intermediary
+Request -> Middleware -> Response
+
+In Express:
+Middleware in Express are functions that come into play 
+after the server receives the request and 
+before the response is sent to the client.
+
+Middleware functions can perform the following tasks:
+• Execute any code.
+• Make changes to the request and the response objects.
+• End the request-response cycle.
+• Call the next middleware function in the stack.
+
+Common middleware functions :
+• methodOverride 
+• bodyParser
+• express.static
+• express.urlencoded
+
+app.use(express.urlencoded ({ extended: true }));
+app.use(express.static(path. join(_dirname, "/public"')));
+
+
+Middleware themselves can give responses and 
+eliminate the function to get to the the main route 
+
+The next middleware function is commonly denoted by a variable named next.
+app.use((req, res, next) => {
+    console. log('Time:', Date.now());
+    next();
+})
+
+If the current middleware function does not end the request-response cycle, 
+It must call next to pass control to the next middleware function.
