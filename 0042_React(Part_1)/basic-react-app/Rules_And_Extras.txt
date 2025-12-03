@@ -1,0 +1,28 @@
+    Writing markups in JSX:
+
+    1. Return a single root element
+    2. Close all the tags
+    3. Use camelCase for most of the things 
+    
+
+
+
+    React Fragment : 
+    Use of :
+    <></>
+
+    instead of :
+    <div></div>
+
+    It does not create an extra div component as an extra node in the main function
+
+
+
+    JSX with curly bracese:
+    any code written in the {} is treated as a pure JS code by the compiler
+
+
+    Styling of each component should be added in the styling of its own Name.css file
+
+
+    props is a very important part of react as it helps us to make our website dynamic
