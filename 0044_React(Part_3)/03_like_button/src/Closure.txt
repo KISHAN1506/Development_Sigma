@@ -1,0 +1,19 @@
+Closure: A closure is a feature in JavaScript where an inner function has access to the outer (enclosing)
+function's variables
+
+function outer () {
+    var b = 10;
+    function inner () {
+        var a = 20;
+        console.log(atb);
+    }
+    return inner;
+}
+
+if we just call inner() then also the fnuction will work b/c of closure property
+It stores the values of the variable it need
+
+
+Put simply, a closure gives an inner function access to its outer function's scope, 
+even after that outer function has finished executing. 
+It is as if the function "remembers" the environment in which it was created. 
