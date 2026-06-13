@@ -8,6 +8,8 @@ const ExpressError = require("./utils/ExpressError.js");
 const { stat } = require("fs");
 const { valid } = require("joi");
 const { log } = require("console");
+const session = require("express-session");
+const flash = require("connect-flash")
 
 // No longer required as we have restructured everything in routes
 // const Listing = require("./models/listing.js");
@@ -37,9 +39,28 @@ app.use(methodOverride("_method"));
 app.engine('ejs', ejsMate);
 app.use(express.static(path.join(__dirname, "/public")));
 
+const sessionOptions = {
+    secret: "mysupersecretcode",
+    resave: false,
+    saveUninitialized: true,
+    cookie:{
+        expires: Date.now() + 7*25*60*60*1000,
+        maxAge: 7*25*60*60*1000,
+        httpOnly: true,
+    }
+};
 
 app.get("/", (req, res) => {
     res.redirect("/listings")
+})
+
+app.use(session(sessionOptions));
+app.use(flash())
+
+app.use((req,res,next)=>{
+    res.locals.success = req.flash("success");
+    res.locals.error = req.flash("error");
+    next(); //if next not called so we'll be stuck at this middleware itself
 })
 
 app.use("/listings",listings);
