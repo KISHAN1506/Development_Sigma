@@ -7,29 +7,22 @@ const router = express.Router();
 const {isLoggedIn, isOwner,validateListing} = require("../middleware.js");
 const listingController = require("../controllers/listings.js");
 
-
-
-
-//Index Route
-router.get("/", wrapAsync(listingController.index))
-
 // New Route
 router.get("/new",isLoggedIn , listingController.renderNewForm)
 
-//Show Route
-router.get("/:id", validateListing, wrapAsync(listingController.showListing))
+router.route("/")
+.get( wrapAsync(listingController.index))
+.post(isLoggedIn , wrapAsync(listingController.createListing))
 
-// Create Route
-router.post("/",isLoggedIn , wrapAsync(listingController.createListing))
+
+router.route("/:id")
+.get(validateListing, wrapAsync(listingController.showListing))
+.put(isLoggedIn,isOwner ,validateListing, wrapAsync(listingController.updateListing))
+.delete(isLoggedIn,isOwner , wrapAsync(listingController.destroyListing))
+
 
 // Edit Route
 router.get("/:id/edit",isLoggedIn,isOwner , wrapAsync(listingController.renderEditForm))
-
-// Update route
-router.put("/:id", isLoggedIn,isOwner ,validateListing, wrapAsync(listingController.updateListing))
-
-// Delete Route
-router.delete("/:id",isLoggedIn,isOwner , wrapAsync(listingController.destroyListing))
 
 
 module.exports = router;
