@@ -1,3 +1,7 @@
+if(process.env.NODE_ENV != "production"){
+    require("dotenv").config();
+}
+
 const express = require("express");
 const app = express();
 const mongoose = require("mongoose");
@@ -76,15 +80,15 @@ app.use((req,res,next)=>{
     next(); //if next not called so we'll be stuck at this middleware itself
 })
 
-app.get("/fakeUser",async (req,res)=>{
-    let fakeUser = new User({
-        email : "Kishan@gmail.com",
-        username : "Kishan1506",
-    });
+// app.get("/fakeUser",async (req,res)=>{
+//     let fakeUser = new User({
+//         email : "Kishan@gmail.com",
+//         username : "Kishan1506",
+//     });
 
-    let registeredUser = await User.register(fakeUser,"kishanismyname");
-    res.send(registeredUser);
-})
+//     let registeredUser = await User.register(fakeUser,"kishanismyname");
+//     res.send(registeredUser);
+// })
 
 app.use("/listings",listingRouter);
 app.use("/listings/:id/reviews",reviewRouter);

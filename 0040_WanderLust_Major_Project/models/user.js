@@ -9,7 +9,6 @@ const userSchema = new Schema({
         required: true
     }
 })
-console.log(passportLocalMongoose);
 
 userSchema.plugin(passportLocalMongoose);
 
