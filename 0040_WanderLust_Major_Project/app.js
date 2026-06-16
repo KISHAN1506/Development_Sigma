@@ -12,7 +12,8 @@ const ExpressError = require("./utils/ExpressError.js");
 const { stat } = require("fs");
 const { valid } = require("joi");
 const { log } = require("console");
-const session = require("express-session");
+const session = require("express-session"); // these store data locally so thereby we are using connect mongo
+const MongoStore = require("connect-mongo").default
 const flash = require("connect-flash")
 const passport = require("passport")
 const LocalStrategy = require("passport-local")
@@ -48,7 +49,20 @@ app.use(methodOverride("_method"));
 app.engine('ejs', ejsMate);
 app.use(express.static(path.join(__dirname, "/public")));
 
+const store = MongoStore.create({
+    mongoUrl : mongodbAtlasURL,
+    crypto :{
+        secret:"mysupersecretcode",
+    },
+    touchAfter: 24*60*60
+})
+
+store.on("error",() =>{
+    console.log("Error in MONGO session store");
+})
+
 const sessionOptions = {
+    store,
     secret: "mysupersecretcode",
     resave: false,
     saveUninitialized: true,
