@@ -1,5 +1,8 @@
 <% layout("/layouts/boilerplate.ejs") %>
-
+<script>
+    const coordinates = <%- JSON.stringify(listing.geometry && listing.geometry.coordinates && listing.geometry.coordinates.length === 2 ? listing.geometry.coordinates : [77.209, 28.6139]) %>;
+    const listingLocation = <%- JSON.stringify(listing.location) %>;
+</script>
 
     <div class="row mt-3">
         <div class="col-8 offset-3">
@@ -67,9 +70,10 @@
         </form>
         <hr>
         <% } %>
-        <p><b>All Reviews</b></p>
-
+        
+        <% if(listing.reviews.length > 0) { %> 
         <div class="row">
+            <p><b>All Reviews</b></p>
             <% for(review of listing.reviews) {%>
                 <div class="card col-5 ms-3 mb-3">
                     <div class="card-body">
@@ -86,4 +90,13 @@
                 </div>
             <% } %>
         </div>
+        <% } %>
     </div>
+        <div class="col-8 offset-3 mb-3">
+            <h3>Where you'll be :</h3>
+            <div id="map"></div>
+        </div>
+
+
+    
+<script src="/js/map.js"></script>

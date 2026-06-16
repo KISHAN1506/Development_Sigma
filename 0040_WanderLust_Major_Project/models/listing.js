@@ -1,6 +1,7 @@
 const mongoose = require("mongoose");
 const Review = require("./review");
 const wrapAsync = require("../utils/wrapAsync");
+const { required } = require("joi");
 const Schema = mongoose.Schema;
 
 const ListingSchema = new Schema({
@@ -25,7 +26,18 @@ const ListingSchema = new Schema({
     owner:{
         type: Schema.Types.ObjectId,
         ref:"User"
+    },
+    geometry : {
+    type: {
+      type: String, // Don't do `{ location: { type: String } }`
+      enum: ['Point'], // 'location.type' must be 'Point'
+      required: true
+    },
+    coordinates: {
+      type: [Number],
+      required: true
     }
+  }
 });
 
 ListingSchema.post("findOneAndDelete",wrapAsync(async (req,res)=>{
